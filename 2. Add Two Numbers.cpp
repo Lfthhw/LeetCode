@@ -19,6 +19,14 @@ struct ListNode {
 
 class Solution {
 public:
+    /**
+     * Solution:
+     * record l1 as the answer
+     * add l1 and l2 from the lowest position to the highest position
+     * In each position,
+     * if (val > 9) after adding, it need to carry 1 to the next position
+     * do the add operation until l2 has finished adding and there is no carry
+     */
     ListNode* addTwoNumbers(ListNode* l1, ListNode* l2) {
         ListNode *head;
         head = l1;
